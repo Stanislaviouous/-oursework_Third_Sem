@@ -1,0 +1,188 @@
+<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="assets/img/portfolio/folio01.jpg" class="img-responsive">
+				<div class="price">750.00 Р.</div><div class="button">Купить</div></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="assets/img/portfolio/folio02.jpg" class="img-responsive">
+				<div class="price">1250.00 Р.</div><div class="button">Купить</div></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="assets/img/portfolio/folio03.jpg" class="img-responsive">
+				<div class="price">250.00 Р.</div><div class="button">Купить</div></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="assets/img/portfolio/folio02.jpg" class="img-responsive">
+				<div class="price">500.00 Р.</div><div class="button">Купить</div></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="assets/img/portfolio/folio03.jpg" class="img-responsive">
+				<div class="price">750.00 Р.</div><div class="button">Купить</div></a>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html"><img src="assets/img/portfolio/folio01.jpg" class="img-responsive">
+				<div class="price">1250.00 Р.</div><div class="button">Купить</div></a>
+			</div>
+
+                    $('document').ready(function(){
+        loadGoods();
+        });
+        function loadGoods(){
+            $.getJSON('assets/goods.json', function (data){
+                console.log(data);
+                let out = '';
+                data.forEach(({ id, title, link, price }) => {
+                    console.log( id, title, link, price );
+                    out += '<li> <span>{$title}</span> <img src="${link}"> <span>{$price}</span> </li>';
+                    goods.innerHTML = '<li> <span>{$title}</span> <img src="${link}"> <span>{$price}</span> </li>';
+
+
+
+                });
+                const html = '<ul> ${out}  </ul>';
+                ROOT_PRODUCTS.innerHTML = html;
+                ROOT_CONTAINER.innerHTML = html;
+
+
+
+                htmlCatalog += `
+                <li>
+                    <span>${title}</span>
+                    <img src="${link}" />
+                    <span>${price}</span>
+                    <button>Добавить в корзину</button>
+                </li>
+            `;
+            
+            
+                ROOT_GOODS.innerHTML = html;
+                
+
+                 @keyframes go487993996{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go1747222846{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}@keyframes go2652833988{from{transform:scale(0) rotate(90deg);opacity:0;}to{transform:scale(1) rotate(90deg);opacity:1;}}@keyframes go1268368563{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@keyframes go3344466522{0%{height:0;width:0;opacity:0;}40%{height:0;width:6px;opacity:1;}100%{opacity:1;height:10px;}}@keyframes go2190974446{from{transform:scale(0.6);opacity:0.4;}to{transform:scale(1);opacity:1;}}
+                
+            })
+        }
+        
+function change(objName, min, max, step) {
+
+    var obj = document.getElementById(objName);
+    
+    var tmp = +obj.value + step;
+    
+    if (tmp<min) tmp=min;
+    
+    if (tmp>max) tmp=max;
+    
+    obj.value = tmp;
+    
+    
+    
+    }
+        <button  type="button"  rel="nofollow" class="btn-default" data-id=" '+ id + '" onclick="add()"> В корзину</button></form> </div> </li>x
+
+
+
+
+         "P1" : {
+        "name" : "Стикер 1",
+        "count" : 0,
+        },
+        "P2" : {
+        "name" : "Стикер 2",
+        "count" : 0,
+        },
+        "P3" : {
+        "name" : "Стикер 3",
+        "count" : 0,
+        },
+        "P4" : {
+        "name" : "Стикер 4",
+        "count" : 0,
+        },
+        "P5" : {
+        "name" : "Стикер 5",
+        "count" : 0,
+        },
+        "P6" : {
+        "name" : "Стикер 6",
+        "count" : 0,
+        },
+        "P7" : {
+        "name" : "Стикер 7",
+        "count" : 0,
+        },
+        "P8" : {
+        "name" : "Стикер 8",
+        "count" : 0,
+        }
+    
+        
+        document.onclick = event =>{
+        if (event.target.classList.contains('plus')){
+            plusFunction(event.target.dataset.id);
+            
+            
+        }
+        if (event.target.classList.contains('minus')){
+            minusFunction(event.target.dataset.id);
+            
+        }
+  }
+  const plusFunction = id=> {
+    
+  }
+  const minusFunction = id=> {
+
+  
+  const deleteFunction = id =>{
+   
+  }
+  const createFunction = id =>{
+    
+  }
+
+  const renderCart = () => {
+    
+  }
+  renderCart();
+}
+
+$('document').ready(function(){
+    
+    loadGoods();
+    });
+    function loadGoods(){
+        $.getJSON('assets/goods.json', function (data){
+           
+            
+            var out = '';
+            var html = '';
+            
+            data.forEach(({ id, title, link, price }) => {
+                
+               document.getElementById('goods').innerHTML = html;
+               html = html + '<ul><li> <div class="col-lg-4 col-md-4 col-sm-4 gallery">'+
+               '  <div class="name">'  + title + 
+               '</div> <img src="' + link + 
+               '" class="img-responsive"></a>  <div class="price"> '
+                +price+ '<p>руб.</p></div>  '+
+                '<div class="addand"><button class="plus" data-id="'+id+'"><b>Добавить</b></button>'+
+                ' <button class="minus"  data-id="'+id+'"><b>Удалить</b></button">'+
+                '  </div> </li></ul>'
+               
+            })
+           
+
+
+           
+            
+        })
+    }
+    
+    var cart = {
+       
+
+        
+    }
+
+
+ <button class="minus"  data-id="'+title+'"><b>Удалить</b></button">

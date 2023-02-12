@@ -1,0 +1,26 @@
+[
+  {
+    "id": "D1",
+    "orderList": [ "O1", "O2"]
+  },
+  {
+    "id": "D2",
+    "orderList": [ "O1"]
+  },
+  {
+    "id": "D3",
+    "orderList": [ "O3"]
+  },
+  {
+    "id": "D4",
+    "orderList": [ "O2", "O5"]
+  },
+  {
+    "id": "D5",
+    "orderList": [ "O6" ]
+  },
+  {
+    "id": "D6",
+    "orderList": [ "O3"]
+  }
+]
